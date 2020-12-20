@@ -1,0 +1,705 @@
+﻿<!-- https://github.com/Tyrrrz/DiscordChatExporter -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Direct Messages - masquerave</title>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width" />
+<style>body {
+    background-color: #36393E;
+    color: rgba(255, 255, 255, 0.7);
+    font-family: Whitney, Helvetica Neue, Helvetica, Arial, sans-serif;
+    font-size: 16px;
+}
+
+a {
+    color: #0096CF;
+    text-decoration: none;
+}
+
+a:hover { text-decoration: underline; }
+
+div.pre {
+    background-color: #2F3136;
+    color: rgb(131, 148, 150);
+    font-family: Consolas, Courier New, Courier, Monospace;
+    margin-top: 4px;
+    padding: 8px;
+    white-space: pre-wrap;
+}
+
+span.pre {
+    background-color: #2F3136;
+    font-family: Consolas, Courier New, Courier, Monospace;
+    padding-left: 2px;
+    padding-right: 2px;
+    white-space: pre-wrap;
+}
+
+div#info {
+    display: flex;
+    margin-bottom: 10px;
+    margin-left: 5px;
+    margin-right: 5px;
+    max-width: 100%;
+}
+
+div#log { max-width: 100%; }
+
+img.guild-icon {
+    max-height: 64px;
+    max-width: 64px;
+}
+
+div.info-right {
+    flex: 1;
+    margin-left: 10px;
+}
+
+div.guild-name {
+    color: #FFFFFF;
+    font-size: 1.4rem;
+}
+
+div.channel-name {
+    color: #FFFFFF;
+    font-size: 1.2rem;
+}
+
+div.misc { margin-top: 2px; }
+
+div.msg {
+    border-top: 1px solid rgba(255, 255, 255, 0.04);
+    display: flex;
+    margin-left: 10px;
+    margin-right: 10px;
+    padding-bottom: 15px;
+    padding-top: 15px;
+}
+
+div.msg-left {
+    height: 40px;
+    width: 40px;
+}
+
+img.msg-avatar {
+    border-radius: 50%;
+    height: 40px;
+    width: 40px;
+}
+
+div.msg-right {
+    flex: 1;
+    margin-left: 20px;
+}
+
+span.msg-user {
+    color: #FFFFFF;
+    font-size: 1rem;
+}
+
+span.msg-date {
+    color: rgba(255, 255, 255, 0.2);
+    font-size: .75rem;
+    margin-left: 5px;
+}
+
+span.msg-edited {
+    color: rgba(255, 255, 255, 0.2);
+    font-size: .8rem;
+    margin-left: 5px;
+}
+
+div.msg-content {
+    font-size: .9375rem;
+    padding-top: 5px;
+    word-break: break-all;
+}
+
+div.msg-attachment {
+    margin-bottom: 5px;
+    margin-top: 5px;
+}
+
+img.msg-attachment {
+    max-height: 500px;
+    max-width: 50%;
+}
+
+img.emoji {
+    height: 24px;
+    width: 24px;
+    vertical-align: -.4em;
+}
+
+span.mention {
+    font-weight: 600;
+}</style>
+</head>
+<body>
+<div id="info">
+<div class="info-left">
+<img class="guild-icon" src="https://cdn.discordapp.com/embed/avatars/0.png" />
+</div>
+<div class="info-right">
+<div class="guild-name">Direct Messages</div>
+<div class="channel-name">masquerave</div>
+<div class="misc">404 messages</div>
+</div>
+</div>
+<div id="log">
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/295645007711567872/f573b52f8bc0eeb02bc67738c755f448.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="masquerave#2727">masquerave</span>
+<span class="msg-date">22-Oct-17 03:01 PM</span>
+<div class="msg-content">
+sildar probably leads jerrold to a quiet corner of the room</div>
+<div class="msg-content">
+his expression is unreadable as he asks</div>
+<div class="msg-content">
+s: why are you wearing that?</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/embed/avatars/2.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Nattata#7992">Nattata</span>
+<span class="msg-date">22-Oct-17 03:02 PM</span>
+<div class="msg-content">
+he looks at his armor</div>
+<div class="msg-content">
+j: i was due for an upgrade</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/295645007711567872/f573b52f8bc0eeb02bc67738c755f448.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="masquerave#2727">masquerave</span>
+<span class="msg-date">22-Oct-17 03:02 PM</span>
+<div class="msg-content">
+s: not that</div>
+<div class="msg-content">
+s: the ring</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/embed/avatars/2.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Nattata#7992">Nattata</span>
+<span class="msg-date">22-Oct-17 03:02 PM</span>
+<div class="msg-content">
+j: ... oh!</div>
+<div class="msg-content">
+he kind of holds it up</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/295645007711567872/f573b52f8bc0eeb02bc67738c755f448.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="masquerave#2727">masquerave</span>
+<span class="msg-date">22-Oct-17 03:03 PM</span>
+<div class="msg-content">
+sildar&#39;s expression kind of stiffens</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/embed/avatars/2.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Nattata#7992">Nattata</span>
+<span class="msg-date">22-Oct-17 03:03 PM</span>
+<div class="msg-content">
+j: it was gifted to me</div>
+<div class="msg-content">
+j: by... sir darran</div>
+<div class="msg-content">
+j: edermath</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/295645007711567872/f573b52f8bc0eeb02bc67738c755f448.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="masquerave#2727">masquerave</span>
+<span class="msg-date">22-Oct-17 03:03 PM</span>
+<div class="msg-content">
+sildar actually looks kind of sick</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/embed/avatars/2.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Nattata#7992">Nattata</span>
+<span class="msg-date">22-Oct-17 03:04 PM</span>
+<div class="msg-content">
+j: ....</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/295645007711567872/f573b52f8bc0eeb02bc67738c755f448.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="masquerave#2727">masquerave</span>
+<span class="msg-date">22-Oct-17 03:04 PM</span>
+<div class="msg-content">
+s: it was created by a foul man</div>
+<div class="msg-content">
+s: i don&#39;t know why he kept that keepsake</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/embed/avatars/2.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Nattata#7992">Nattata</span>
+<span class="msg-date">22-Oct-17 03:04 PM</span>
+<div class="msg-content">
+j: ... you know ser greenbell, then.</div>
+<div class="msg-content">
+j: lord cartwright... he&#39;d never told me</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/295645007711567872/f573b52f8bc0eeb02bc67738c755f448.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="masquerave#2727">masquerave</span>
+<span class="msg-date">22-Oct-17 03:05 PM</span>
+<div class="msg-content">
+silar says nothing for a few moments</div>
+<div class="msg-content">
+s: you must have been curious why i never spoke of my father</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/embed/avatars/2.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Nattata#7992">Nattata</span>
+<span class="msg-date">22-Oct-17 03:05 PM</span>
+<div class="msg-content">
+j: ....</div>
+<div class="msg-content">
+oh god</div>
+<div class="msg-content">
+jerrold</div>
+<div class="msg-content">
+looks like</div>
+<div class="msg-content">
+he sees where this is going</div>
+<div class="msg-content">
+j: i... never wanted to pry.</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/295645007711567872/f573b52f8bc0eeb02bc67738c755f448.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="masquerave#2727">masquerave</span>
+<span class="msg-date">22-Oct-17 03:06 PM</span>
+<div class="msg-content">
+sildar seems to be trying to control himself</div>
+<div class="msg-content">
+s: i respect ser cartwright, of course</div>
+<div class="msg-content">
+s: i admire him</div>
+<div class="msg-content">
+s: but this decision</div>
+<div class="msg-content">
+s: to -forgive- him for all that he did</div>
+<div class="msg-content">
+s: and for even ser darran to</div>
+<div class="msg-content">
+he scowls</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/embed/avatars/2.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Nattata#7992">Nattata</span>
+<span class="msg-date">22-Oct-17 03:07 PM</span>
+<div class="msg-content">
+j: ... sildar</div>
+<div class="msg-content">
+j: is</div>
+<div class="msg-content">
+j: ser greenbell...</div>
+<div class="msg-content">
+he sort of trails off</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/295645007711567872/f573b52f8bc0eeb02bc67738c755f448.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="masquerave#2727">masquerave</span>
+<span class="msg-date">22-Oct-17 03:07 PM</span>
+<div class="msg-content">
+s: yes</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/embed/avatars/2.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Nattata#7992">Nattata</span>
+<span class="msg-date">22-Oct-17 03:07 PM</span>
+<div class="msg-content">
+j: i... i see.</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/295645007711567872/f573b52f8bc0eeb02bc67738c755f448.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="masquerave#2727">masquerave</span>
+<span class="msg-date">22-Oct-17 03:08 PM</span>
+<div class="msg-content">
+s: left my mother as well, by the way</div>
+<div class="msg-content">
+s: sick as she was</div>
+<div class="msg-content">
+s: ran off with some other woman</div>
+<div class="msg-content">
+s: broke her heart</div>
+<div class="msg-content">
+s: but why does that matter, as long as he felt -remorse-</div>
+<div class="msg-content">
+s: i -</div>
+<div class="msg-content">
+he seems to be trying to leash himself</div>
+<div class="msg-content">
+s: i apologize</div>
+<div class="msg-content">
+s: you knew nothing of this</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/embed/avatars/2.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Nattata#7992">Nattata</span>
+<span class="msg-date">22-Oct-17 03:08 PM</span>
+<div class="msg-content">
+j: no, sildar, i apologize.</div>
+<div class="msg-content">
+j: for you to have seen this, after the news about athkatla...</div>
+<div class="msg-content">
+j: i know your family must be at the forefront of your mind</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/295645007711567872/f573b52f8bc0eeb02bc67738c755f448.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="masquerave#2727">masquerave</span>
+<span class="msg-date">22-Oct-17 03:10 PM</span>
+<div class="msg-content">
+s: i suppose i am not myself</div>
+<div class="msg-content">
+he sighs</div>
+<div class="msg-content">
+s: you are understanding, as always</div>
+<div class="msg-content">
+s: i just never agreed with this single one of lord cartwright&#39;s decisions</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/embed/avatars/2.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Nattata#7992">Nattata</span>
+<span class="msg-date">22-Oct-17 03:12 PM</span>
+<div class="msg-content">
+j: nor did ser edermath.</div>
+<div class="msg-content">
+j: i don&#39;t think he agreed... even after ser greenbell saved his life</div>
+<div class="msg-content">
+j: and i think you&#39;re both well within your rights to hate this man, for all that he did.</div>
+<div class="msg-content">
+j: no one is ever owed forgiveness.</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/295645007711567872/f573b52f8bc0eeb02bc67738c755f448.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="masquerave#2727">masquerave</span>
+<span class="msg-date">22-Oct-17 03:13 PM</span>
+<div class="msg-content">
+s: perhaps it was too personal for me to be objective</div>
+<div class="msg-content">
+he seems to be trying to put this subject aside, as if regretting that he had lashed out</div>
+<div class="msg-content">
+s: anyway, i didn&#39;t mean to drag you here to accost your fashion choices</div>
+<div class="msg-content">
+sort of humorless smile</div>
+<div class="msg-content">
+s: i wanted to ask about lord iarno</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/embed/avatars/2.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Nattata#7992">Nattata</span>
+<span class="msg-date">22-Oct-17 03:14 PM</span>
+<div class="msg-content">
+jerrold tries to muster one, but</div>
+<div class="msg-content">
+at this</div>
+<div class="msg-content">
+his face falls</div>
+<div class="msg-content">
+j: .........</div>
+<div class="msg-content">
+j: i wish</div>
+<div class="msg-content">
+j: we had more than the time we have, together</div>
+<div class="msg-content">
+j: it really is good to see you.</div>
+<div class="msg-content">
+j: but ever since we set out on this journey, we&#39;ve only ever found each other both bearing ill news.</div>
+<div class="msg-content">
+j: ...</div>
+<div class="msg-content">
+j: sildar</div>
+<div class="msg-content">
+j: lord iarno has... slipped from my grasp</div>
+<div class="msg-content">
+j: but i have a lead on him.</div>
+<div class="msg-content">
+j: however</div>
+<div class="msg-content">
+j: that does not change the fact</div>
+<div class="msg-content">
+j: that for the time being</div>
+<div class="msg-content">
+j: i have failed lord cartwright. and i have failed the order</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/295645007711567872/f573b52f8bc0eeb02bc67738c755f448.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="masquerave#2727">masquerave</span>
+<span class="msg-date">22-Oct-17 03:17 PM</span>
+<div class="msg-content">
+sildar&#39;s expression is rapt</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/embed/avatars/2.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Nattata#7992">Nattata</span>
+<span class="msg-date">22-Oct-17 03:17 PM</span>
+<div class="msg-content">
+j: and i&#39;ve failed lord iarno, too.</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/295645007711567872/f573b52f8bc0eeb02bc67738c755f448.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="masquerave#2727">masquerave</span>
+<span class="msg-date">22-Oct-17 03:17 PM</span>
+<div class="msg-content">
+s: what happened?</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/embed/avatars/2.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Nattata#7992">Nattata</span>
+<span class="msg-date">22-Oct-17 03:18 PM</span>
+<div class="msg-content">
+j: when we arrived</div>
+<div class="msg-content">
+j: we were told of a leader at the head of the redbrands&#39; thuggery</div>
+<div class="msg-content">
+j: by the name of glasstaff</div>
+<div class="msg-content">
+j: i&#39;m sure my companions have by now</div>
+<div class="msg-content">
+j: regaled you with the tale of our capture</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/295645007711567872/f573b52f8bc0eeb02bc67738c755f448.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="masquerave#2727">masquerave</span>
+<span class="msg-date">22-Oct-17 03:19 PM</span>
+<div class="msg-content">
+sildar&#39;s expression begins to shift, as if anticipating the turn this is taking</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/embed/avatars/2.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Nattata#7992">Nattata</span>
+<span class="msg-date">22-Oct-17 03:19 PM</span>
+<div class="msg-content">
+j: but in the course of our escaping</div>
+<div class="msg-content">
+j: we found glasstaff. we found... lord iarno.</div>
+<div class="msg-content">
+j: but</div>
+<div class="msg-content">
+j: he escaped.</div>
+<div class="msg-content">
+he kind of like</div>
+<div class="msg-content">
+glances over to felix, and points at the staff strapped to his back</div>
+<div class="msg-content">
+j: i intend to return that to him.</div>
+<div class="msg-content">
+j: but</div>
+<div class="msg-content">
+j: i&#39;ve no doubt, in the course of this journey</div>
+<div class="msg-content">
+j: we will meet lord iarno again.</div>
+<div class="msg-content">
+j: and i will</div>
+<div class="msg-content">
+j: see his return.</div>
+<div class="msg-content">
+and jerrold has never sounded more solemn, nor more determined</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/295645007711567872/f573b52f8bc0eeb02bc67738c755f448.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="masquerave#2727">masquerave</span>
+<span class="msg-date">22-Oct-17 03:24 PM</span>
+<div class="msg-content">
+sildar&#39;s expression is also very solemn</div>
+<div class="msg-content">
+his first instinct is to place a brotherly hand on jerrold&#39;s shoulder</div>
+<div class="msg-content">
+s: i know that whatever transpired, you did all that you could</div>
+<div class="msg-content">
+s: of that i have not a sliver of doubt in my heart</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/embed/avatars/2.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Nattata#7992">Nattata</span>
+<span class="msg-date">22-Oct-17 03:25 PM</span>
+<div class="msg-content">
+j: the best that can be said</div>
+<div class="msg-content">
+j: is i&#39;m more prepared than ever, now.</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/295645007711567872/f573b52f8bc0eeb02bc67738c755f448.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="masquerave#2727">masquerave</span>
+<span class="msg-date">22-Oct-17 03:25 PM</span>
+<div class="msg-content">
+s: i believe you</div>
+<div class="msg-content">
+s: this...</div>
+<div class="msg-content">
+he seems to be feeling the weight of the news</div>
+<div class="msg-content">
+s: this will cause him great pain</div>
+<div class="msg-content">
+s: what could he be doing, to betray his grandfather like this?</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/embed/avatars/2.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Nattata#7992">Nattata</span>
+<span class="msg-date">22-Oct-17 03:25 PM</span>
+<div class="msg-content">
+j: ... i might ask</div>
+<div class="msg-content">
+j: that lord cartwright only hear of this once his grandson is secured</div>
+<div class="msg-content">
+j: i fear for his condition</div>
+<div class="msg-content">
+j: and anything that may worsen it.</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/295645007711567872/f573b52f8bc0eeb02bc67738c755f448.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="masquerave#2727">masquerave</span>
+<span class="msg-date">22-Oct-17 03:27 PM</span>
+<div class="msg-content">
+s: i see...</div>
+<div class="msg-content">
+s: i will not speak of it to him</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/embed/avatars/2.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Nattata#7992">Nattata</span>
+<span class="msg-date">22-Oct-17 03:28 PM</span>
+<div class="msg-content">
+j: ... You have my gratitude, Sildar</div>
+<div class="msg-content">
+j: I know I&#39;ve failed him once</div>
+<div class="msg-content">
+j: but I don&#39;t intend to make that same mistake twice</div>
+</div>
+</div>
+</div>
+</body>
+</html>
